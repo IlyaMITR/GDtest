@@ -1,0 +1,21 @@
+.controls{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 8em;
+	button{
+		cursor: pointer;
+		width: max-content;
+		margin-bottom: 1em	;
+		font-size: 1em;
+		border-radius: .5em;
+		border: 0.125em solid #ddd;
+		background-color: #fff;
+		padding: .065em .3em;
+		&:not([disabled]):hover{
+			border: 0.125em solid #3ec9ff;
+			padding: .065em .4em;
+		}
+		transition: padding .1s, border .2s;
+	}
+}

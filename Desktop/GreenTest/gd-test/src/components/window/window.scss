@@ -1,0 +1,60 @@
+.modal-bg{
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100vw;
+	height: 100vh;
+	z-index: 1000;
+	background: rgba(0, 0, 0, 0.29);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	.window{
+		background: #fff;
+		min-width: 500px;
+		padding: 1em;
+		box-shadow: 0 0 20px -8px #000;
+		border-radius: 1em;
+		&.warning{
+			border: 5px solid gold;
+		}
+		&__header{
+			text-align: center;
+		}
+		&__body{
+			padding: 1em .5em;
+			display: flex;
+			justify-content: start;
+			form{
+				display: flex;
+				flex-direction: column;
+				align-items: end;
+				input{
+					width: 300px;
+					margin: 0 0 1em 1.5em;
+					&[type="radio"]{
+						width: max-content;
+					}
+					&[type="checkbox"]{
+						width: max-content;
+					}
+				}
+			}
+			&.warning{
+				justify-content: center;
+			}
+		}
+		&__footer{
+			display: flex;
+			justify-content: center;
+			.foot-button{
+				&:hover{
+					padding: .065em .3em;
+				}
+				&.add{
+					margin-right: 1em;
+				}
+			}
+		}
+	}
+}
